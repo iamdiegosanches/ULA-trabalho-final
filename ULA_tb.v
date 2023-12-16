@@ -1,5 +1,6 @@
+`include "ULA.v"
+
 module tb;
-	
 	reg         clk;
 	reg  [0:3]  inputULA;
 	reg  [0:31] a;
