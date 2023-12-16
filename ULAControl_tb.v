@@ -1,5 +1,6 @@
+`include "ULAControl.v"
+
 module tb;
-	
 	reg        clk;
 	reg [0:1]  OpALU;
 	reg [0:5]  funct;
