@@ -12,13 +12,13 @@ module ULA (input         clk,
             // OR
             outputULA <= a | b;
         end else if (inputULA == 4'b0010) begin
-            // add
+            // ADD
             outputULA <= a + b;
         end else if (inputULA == 4'b0110) begin
-            // subtract
+            // SUB
             outputULA <= a - b;
         end else if (inputULA == 4'b0111) begin
-            // set on less than
+            // SLT
             outputULA <= (a < b) ? 1 : 0;
         end else begin
             outputULA <= 0;
