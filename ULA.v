@@ -1,10 +1,8 @@
-module ULA (
-    input         clk,
-    input  [0:3]  inputULA,
-    input  [0:31] a,
-    input  [0:31] b,
-    output reg [0:31] outputULA
-);
+module ULA (input         clk,
+			input  [0:3]  inputULA, 
+			input  [0:31] a,
+			input  [0:31] b,
+			output reg [0:31] outputULA);
 
     always @(posedge clk) begin
         if (inputULA == 4'b0000) begin
@@ -23,7 +21,6 @@ module ULA (
             // set on less than
             outputULA <= (a < b) ? 1 : 0;
         end else begin
-            // default case
             outputULA <= 0;
         end
     end
