@@ -10,7 +10,7 @@ module MIPS(input             clk,
 	
 	
 	wire [0:3] inputALU;
-
+    // integração entre a ula sua unidade de controle
     ULA ULA (
         .clk(clk),
         .inputULA(inputALU),
